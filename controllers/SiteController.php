@@ -3,6 +3,8 @@
 namespace app\controllers;
 
 use yii\web\Controller;
+use app\models\EntryForm;
+use Yii;
 
 class SiteController extends Controller {
 
