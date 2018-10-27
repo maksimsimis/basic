@@ -2,12 +2,12 @@
 
 namespace app\models;
 
-use yii\base\Model;
+use yii\db\ActiveRecord;
 
-class EntryForm extends Model {
+class EntryForm extends ActiveRecord {
 
-    public $name;
-    public $email;
+    //public $name;
+    //public $email;
 
     public function rules() {
         return [

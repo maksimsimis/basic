@@ -18,7 +18,7 @@ class SiteController extends Controller {
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             // данные в $model удачно проверены
             // делаем что-то полезное с $model ...
-
+            $model->save();
             return $this->render('entry-confirm', ['model' => $model]);
         } else {
             // либо страница отображается первый раз, либо есть ошибка в данных
